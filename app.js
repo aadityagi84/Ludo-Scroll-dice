@@ -6,21 +6,21 @@ const ludo=()=>{
   const playDice2=`images/dice${play2}.png`;
   document.getElementById('check2').setAttribute('src',playDice2);
  
-  // if(play1>play2){
-  //   document.getElementById('player').innerHTML='Player 1 is won :)'
-  // }else  if(play1<play2){
-  //   document.getElementById('player').innerHTML='Player 2 is won :)'
-  // }
-  // else {
-  //   document.getElementById('player').innerHTML='Rolling Draw:)'
-  // }
+  if(play1>play2){
+    document.getElementById('player').innerHTML='Player 1 is won :)'
+  }else  if(play1<play2){
+    document.getElementById('player').innerHTML='Player 2 is won :)'
+  }
+  else {
+    document.getElementById('player').innerHTML='Rolling Draw:)'
+  }
   // inter = setInterval(user2, 60);
   
-  inter = setInterval(ludo, 60);
+  // inter = setInterval(ludo, 60);
  
-  setTimeout(() => {
-    clearInterval(intervalId );
-  }, 2000);
+  // setTimeout(() => {
+  //   clearInterval(intervalId );
+  // }, 2000);
  
 };
 setTimeout(() => {
